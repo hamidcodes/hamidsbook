@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamid's Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <p>We will send the book(pdf).Thank you!</p>
+
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">hamid's books</a>
+            </header>
+            <h1><span>"The Greatest</span> Secret of the Universe"</h1>
+            <p>Everything about meaning,universe and existence.</p>
+
+            <div class="form-container">
+
+                <form action="">
+                    <div class="form-left">
+                        <label for="city">enter your email and get my first book for free.</label>
+                        <input type="text" name="city" id="city" required>
+                        <p>Example:abc123@gmail.com</p>
+                    </div>
+                    <input type="button" value="Get the book!" name="" id="btn">
+                </form>
+            </div>
+    </section>
+</div>
+
+
+    <section class="last">
+        <div class="right-col">
+            <h2>Who Am I ?</h2>
+            <p id="hamid">I am Hamid. Author of  "The Greatest Secret Of The Universe". It's my first book and you can get it for free on this website. I hope you'll enjoy it.<br></p>
+             <p>  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, cumque sequi. epellendus dolore molestiae at error ut non, dicta, voluptatem fugiat velit commodi! Repudiandae, laborum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, necessitatibus illo? Accusantium, animi tempore. Autem temporibus a facere cumque eveniet saepe fugiat, laborum qui ducimus omnis id laboriosam rem quod!
+                
+            </p>
+        </div>
+        <div class="left">
+        </div>
+    </section>
+<footer>&copy; <script>new Date().getFullYear()>document.write(""+new Date().getFullYear());</script> by  hamid</footer>
+
+    <script>
+    let btn =document.getElementById('btn');
+    let overlay =document.getElementById('overlay');
+
+    btn.addEventListener('click',()=>{
+
+        overlay.style.display='grid';
+        overlay.classList.add('animate-overlay');
+
+    })
+    
+    </script>
+</body>
+</html>
